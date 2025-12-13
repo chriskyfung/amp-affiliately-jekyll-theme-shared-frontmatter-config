@@ -1,23 +1,22 @@
 # ⚙ Shared Front Matter CMS Configurations for AMP Affiliately Jekyll Theme
 
-
 [![GitMCP](https://img.shields.io/endpoint?url=https://gitmcp.io/badge/chriskyfung/amp-affiliately-jekyll-theme-shared-frontmatter-config)](https://gitmcp.io/chriskyfung/amp-affiliately-jekyll-theme-shared-frontmatter-config) ![GitHub last commit](https://img.shields.io/github/last-commit/chriskyfung/amp-affiliately-jekyll-theme-shared-frontmatter-config)
 
 This repository provides a standardized and shared set of Front Matter CMS configurations specifically designed for projects utilizing the [AMP Affiliately Jekyll Theme](https://chriskyfung.github.io/amp-affiliately-jekyll-theme/). By integrating this repository as a Git submodule, you can centralize your CMS settings, ensuring consistency and ease of management across multiple Jekyll sites.
 
 ## ✨ Features & Benefits
 
-*   **Centralized Configuration:** Manage all your Front Matter CMS settings from a single source.
-*   **Consistency Across Projects:** Ensure all your AMP Affiliately Jekyll Theme projects use the same CMS configurations.
-*   **Simplified Updates:** Update configurations once in this repository, then easily sync across all linked projects.
-*   **Improved Collaboration:** Streamline development workflows when multiple team members are working on different sites sharing the same structure.
+* **Centralized Configuration:** Manage all your Front Matter CMS settings from a single source.
+* **Consistency Across Projects:** Ensure all your AMP Affiliately Jekyll Theme projects use the same CMS configurations.
+* **Simplified Updates:** Update configurations once in this repository, then easily sync across all linked projects.
+* **Improved Collaboration:** Streamline development workflows when multiple team members are working on different sites sharing the same structure.
 
 ## 🚀 Parent Project: AMP Affiliately Jekyll Theme
 
 This shared configuration is built to complement the [AMP Affiliately Jekyll Theme](https://chriskyfung.github.io/amp-affiliately-jekyll-theme/). This theme is an AMP-ready Jekyll theme that prioritizes performance and mobile-friendliness, and can be easily installed as a remote theme. It offers deep integration with [Front Matter CMS](https://chriskyfung.github.io/amp-affiliately-jekyll-theme/front-matter-cms/) for a seamless editing experience within VS Code. 👨‍💻
 
-*   [**Theme Website**](https://chriskyfung.github.io/amp-affiliately-jekyll-theme/)
-*   [**Theme GitHub Repository**](https://github.com/chriskyfung/amp-affiliately-jekyll-theme)
+* [**Theme Website**](https://chriskyfung.github.io/amp-affiliately-jekyll-theme/)
+* [**Theme GitHub Repository**](https://github.com/chriskyfung/amp-affiliately-jekyll-theme)
 
 ## ⚡ What is AMP?
 
@@ -31,9 +30,9 @@ To integrate these shared configurations into your existing AMP Affiliately Jeky
 
 Before proceeding, ensure you have:
 
-*   An existing Jekyll project using the AMP Affiliately Jekyll Theme.
-*   [Git](https://git-scm.com/) installed and configured.
-*   Familiarity with [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+* An existing Jekyll project using the AMP Affiliately Jekyll Theme.
+* [Git](https://git-scm.com/) installed and configured.
+* Familiarity with [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ### Step 1: Remove Existing Configurations (If Applicable)
 
@@ -90,15 +89,16 @@ done
 
 Confirm that the shared configurations are correctly detected by Front Matter CMS:
 
-1.  **Clone with Submodules:** If cloning a fresh project that uses this submodule, ensure you initialize and update submodules:
+1. **Clone with Submodules:** If cloning a fresh project that uses this submodule, ensure you initialize and update submodules:
 
     ```bash
     git clone --recurse-submodules https://github.com/your-org/project.git
     # OR, if cloned without --recurse-submodules:
     git submodule update --init --recursive
     ```
-2.  **Open in VS Code:** Launch VS Code and open your project.
-3.  **Check Front Matter Settings:** Within VS Code, open the Front Matter CMS extension and navigate to its settings. You should observe that the configurations from `.frontmatter/config` are now loaded and available.
+
+2. **Open in VS Code:** Launch VS Code and open your project.
+3. **Check Front Matter Settings:** Within VS Code, open the Front Matter CMS extension and navigate to its settings. You should observe that the configurations from `.frontmatter/config` are now loaded and available.
 
 ## 📚 Usage & Front Matter Variables
 
