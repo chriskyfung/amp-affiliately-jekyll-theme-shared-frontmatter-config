@@ -102,6 +102,28 @@ Confirm that the shared configurations are correctly detected by Front Matter CM
 
 ## 📚 Usage & Front Matter Variables
 
+### ➡️ Extending Configurations in `frontmatter.json`
+
+Beyond direct integration via Git submodules, you can also extend these shared configurations within your project's `frontmatter.json` file. This approach is useful when you want to combine the shared settings with your own project-specific configurations, or when you only want to pick a subset of the shared configuration.
+
+To extend the `base.config.json` from this submodule, add the `extends` key to your `frontmatter.json` file, pointing to the relative path of the shared configuration file:
+
+```json
+{
+  "extends": "./.frontmatter/config/content/base.config.json",
+  // Your project-specific configurations go here
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Posts",
+      "path": "[[workspace]]/posts"
+    },
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/pages"
+    }
+  ]
+}
+
 For comprehensive guidance on using Front Matter variables for posts, pages, and other content types within the AMP Affiliately Jekyll Theme, please refer to the official [**Front Matter Guide**](https://chriskyfung.github.io/amp-affiliately-jekyll-theme/front-matter-guide/) ↗.
 
 ---
