@@ -2,14 +2,27 @@
   "$schema": "https://frontmatter.codes/config/content.snippets.schema.json",
   "title": "Include Picture",
   "description": "Use the picture.html template to insert an image with alternative text and a caption for accessibility and SEO purposes",
-  "body": "{% include picture.html img=\"[[&mediaUrl]]\" width=\"[[mediaWidth]]\" height=\"[[mediaHeight]]\" alt=\"[[alt]]\" caption=\"[[&caption]]\" [[&attributes]] [[&layout]][[&lightbox]]source=\"raw\" %}",
+  "body": "{% include picture.html img=\"[[&mediaUrl]]\" width=\"[[mediaWidth]]\" height=\"[[mediaHeight]]\" alt=\"[[alt]]\" caption=\"[[&caption]]\" [[&attributes]] [[&class]][[&layout]][[&lightbox]]source=\"raw\" %}",
   "isMediaSnippet": true,
   "fields": [
     {
       "name": "attributes",
-      "title": "class=\"MyClass\" link=\"/page-URL\"",
+      "title": "data-*=\"value\" link=\"/page-URL\"",
       "type": "string",
       "single": true,
+      "default": ""
+    },
+    {
+      "name": "class",
+      "title": "class",
+      "type": "choice",
+      "choices": [
+        "",
+        "class=\"\" ",
+        "class=\"text-center\" ",
+        "class=\"shadow-none\" ",
+        "class=\"shadow-none text-center\" "
+      ],
       "default": ""
     },
     {
@@ -34,8 +47,8 @@
       "type": "choice",
       "choices": [
         "",
-        "lightbox=true ",
-        "lightbox=false "
+        "lightbox=\"true\" ",
+        "lightbox=\"false\" "
       ],
       "default": ""
     }
